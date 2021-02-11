@@ -2,7 +2,7 @@
 <?php require 'inc/topbar.php' ?>
 
 <main>
-    <div class="container">
+    <div class="container white-text">
 
         <!-- Article -->
 
