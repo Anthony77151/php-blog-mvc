@@ -1,11 +1,6 @@
-body
-{
-  background-color: #ECEFF1;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+html::-webkit-scrollbar {
+  display: none;			
 }
-
 main
 {
   flex: 1 0 auto;
@@ -29,7 +24,13 @@ main
 .footer-row{
   margin-bottom:0;
 }
-
+.titresite{
+  font-family: 'Lemonada', cursive;
+}
+.chapterlist{
+  background-color: #212121B3;
+  padding: 8px;
+}
 
 /* RESPONSIVE */
 
@@ -55,4 +56,13 @@ main
     font-weight: bold;
     text-align: center;
   }
+}
+
+.from-right{
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.from-right {
+    transform: translate(0px, 0px);
 }

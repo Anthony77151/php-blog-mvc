@@ -10,7 +10,7 @@
             <img src="static/img/admin.png" alt="registration" width="100%">
           </div>
         </div>
-        <h4 class="center-align">Inscription</h4>
+        <h4 class="white-text center-align">Inscription</h4>
         <center>
           <?php require 'inc/msg.php' ?>
         </center>
@@ -33,16 +33,16 @@
               <label for="password_again">Répéter le mot de passe</label>
             </div>
             <center>
-                <button type="submit" name="submit" class="btn waves-effect waves-light deep-purple darken-3">
+              <button type="submit" name="submit" class="btn waves-effect waves-light orange lighten-3 black-text">
                 <i class="material-icons left">perm_identity</i>
                 Inscription
-                </button>
+              </button>
             </center>
           </div>
         </form>
       </div>
       <center>
-        <a class="purple-text" href="<?=ROOT_URL?>blog_login.html">Déjà inscrit ?</a>
+        <a class="white-text" href="<?= ROOT_URL ?>blog_login.html">Déjà inscrit ?</a>
       </center>
     </div>
   </div>

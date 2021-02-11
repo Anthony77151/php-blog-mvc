@@ -1,7 +1,7 @@
 <?php require 'inc/header.php' ?>
 <?php require 'inc/topbar.php' ?>
 
-<div class="container">
+<div class="container white-text">
   <h1>Poster un article</h1>
   <?php require 'inc/msg.php' ?>
   <form method="post" enctype="multipart/form-data">
@@ -19,7 +19,7 @@
 
 		<div class="col s12">
 			<div class="input-field file-field">
-				<div class="btn deep-purple lighten-3">
+				<div class="btn yellow lighten-3 black-text">
 					<span>Image de l'article</span>
 					<input type="file" name="image">
 				</div>
@@ -31,7 +31,7 @@
 
 		<div class="col s12 right-align">
 			<br><br>
-			<button class="btn deep-purple darken-3 waves-effect waves-light" type="submit" name="add_submit">Publier</button>
+			<button class="btn orange lighten-3 black-text waves-effect waves-light" type="submit" name="add_submit">Publier</button>
 		</div>
 
 	</div>

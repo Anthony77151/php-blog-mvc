@@ -9,6 +9,10 @@
    display: flex;
    min-height: 100vh;
    flex-direction: column;
+   background-image: url(/static/img/posts/unnamed.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
  }
 
  main
@@ -2543,6 +2547,7 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  background-color: #fff;
 }
 
 td,
@@ -2646,7 +2651,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #b39ddb;
+  border-left: 5px solid #ffd54f;
 }
 
 i {
@@ -2956,6 +2961,7 @@ td, th {
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
+  
 }
 
 @media only screen and (max-width: 992px) {
@@ -4471,8 +4477,8 @@ html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
 }
+
 
 @media only screen and (min-width: 0) {
   html {
@@ -4505,6 +4511,7 @@ h1 {
   font-size: 4.2rem;
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0;
+  color: #fff;
 }
 
 h2 {
@@ -4523,6 +4530,7 @@ h4 {
   font-size: 2.28rem;
   line-height: 110%;
   margin: 1.14rem 0 0.912rem 0;
+  color: #fff;
 }
 
 h5 {
@@ -4722,7 +4730,7 @@ small {
   padding: 24px;
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #212121;
 }
 
 .card {
@@ -5087,7 +5095,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #311b92;
+  background-color: #ffd54f;
   will-change: left, right;
 }
 
@@ -6096,9 +6104,9 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #311b92;
-  -webkit-box-shadow: 0 1px 0 0 #311b92;
-          box-shadow: 0 1px 0 0 #311b92;
+  border-bottom: 1px solid #ffe082;
+  -webkit-box-shadow: 0 1px 0 0 #ffe082;
+          box-shadow: 0 1px 0 0 #ffe082;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -6114,7 +6122,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #311b92;
+  color: #ffe082;
 }
 
 input:not([type]).validate + label,
@@ -6217,9 +6225,9 @@ input[type=search].valid:not(.browser-default),
 input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #311b92;
-  -webkit-box-shadow: 0 1px 0 0 #311b92;
-          box-shadow: 0 1px 0 0 #311b92;
+  border-bottom: 1px solid #ffe082;
+  -webkit-box-shadow: 0 1px 0 0 #ffe082;
+          box-shadow: 0 1px 0 0 #ffe082;
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
@@ -6247,9 +6255,9 @@ input[type=search].invalid:not(.browser-default),
 input[type=search].invalid:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown {
-  border-bottom: 1px solid #9575cd;
-  -webkit-box-shadow: 0 1px 0 0 #9575cd;
-          box-shadow: 0 1px 0 0 #9575cd;
+  border-bottom: 1px solid #ffe082;
+  -webkit-box-shadow: 0 1px 0 0 #ffe082;
+          box-shadow: 0 1px 0 0 #ffe082;
 }
 
 input:not([type]).valid + label:after,
@@ -6279,7 +6287,7 @@ input[type=search]:not(.browser-default):focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after, .select-wrapper.valid + label:after {
   content: attr(data-success);
-  color: #311b92;
+  color: #ffe082;
   opacity: 1;
   -webkit-transform: translateY(9px);
           transform: translateY(9px);
@@ -6312,7 +6320,7 @@ input[type=search]:not(.browser-default):focus.invalid + label:after,
 textarea.materialize-textarea.invalid + label:after,
 textarea.materialize-textarea:focus.invalid + label:after, .select-wrapper.invalid + label:after {
   content: attr(data-error);
-  color: #F44336;
+  color: #ffe082;
   opacity: 1;
   -webkit-transform: translateY(9px);
           transform: translateY(9px);
@@ -9418,8 +9426,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/
 }
 
-
-
+/* p{
+  color: #fff;
+} */
 
 .parallax-container{
 	height: 340px;

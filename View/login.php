@@ -10,7 +10,7 @@
   				</div>
   			</div>
 
-  			<h4 class="center-align">Se connecter</h4>
+  			<h4 class="white-text center-align">Se connecter</h4>
 
         <center>
           <?php require 'inc/msg.php' ?>
@@ -24,13 +24,13 @@
   					</div>
 
   					<div class="input-field col s12">
-  						<input type="password" id="password" name="password" required="required">
+  						<input class="white-text" type="password" id="password" name="password" required="required">
   						<label for="password">Mot de passe</label>
   					</div>
   				</div>
 
   				<center>
-  					<button type="submit" name="submit" class="waves-effect waves-light btn deep-purple darken-3">
+  					<button type="submit" name="submit" class="waves-effect waves-light btn orange lighten-3 black-text">
   						<i class="material-icons left">perm_identity</i>
   						Se connecter
   					</button>
@@ -39,7 +39,7 @@
 
   		</div>
       <center>
-        <a class="purple-text" href="<?=ROOT_URL?>blog_registration.html">Pas encore inscrit ?</a>
+        <a class="white-text" href="<?=ROOT_URL?>blog_registration.html">Pas encore inscrit ?</a>
       </center>
   	</div>
   </div>

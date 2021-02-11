@@ -7,12 +7,12 @@
   <?php if (empty($this->oPost)): ?>
       <p class="error">Cet article n'existe pas !</p>
   <?php else: ?>
-    <h1>Modifier l'article :</h1>
+    <h1 class="white-text">Modifier l'article :</h1>
     <form method="post" enctype="multipart/form-data">
     	<div class="row">
 
     		<div class="input-field col s12">
-    			<input type="text" name="title" id="title" value="<?=htmlspecialchars($this->oPost->title)?>" required="required">
+    			<input class="white-text" type="text" name="title" id="title" value="<?=htmlspecialchars($this->oPost->title)?>" required="required">
     			<label for="title">Titre de l'article</label>
     		</div>
 
@@ -25,7 +25,7 @@
         <div class="col s6 left-align">
     			<br><br>
           <div class="input-field file-field">
-    				<div class="btn deep-purple lighten-1">
+    				<div class="btn yellow lighten-3 black-text">
     					<span>Modifier l'image</span>
     					<input type="file" name="image">
     				</div>
@@ -37,7 +37,7 @@
 
     		<div class="col s6 right-align">
     			<br><br>
-    			<button type="submit" class="btn deep-purple darken-3 waves-effect waves-light" name="edit_submit">Confirmer</button>
+    			<button type="submit" class="btn orange lighten-3 black-text waves-effect waves-light" name="edit_submit">Confirmer</button>
     		</div>
     	</div>
     </form>

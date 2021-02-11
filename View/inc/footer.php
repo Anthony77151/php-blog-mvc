@@ -1,7 +1,7 @@
 
 
 
-<footer class="page-footer deep-purple lighten-3">
+<footer class="page-footer grey darken-4">
   <div class="footer-copyright">
     <div class="container">
       <div class="row footer-row">

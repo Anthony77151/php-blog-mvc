@@ -2,14 +2,14 @@
 <?php require 'inc/topbar.php' ?>
 <main>
   <div class="container">
-    <h1 class="page-title">Liste des chapitres</h1>
+    <h1 class="page-title white-text">Liste des chapitres</h1>
     <?php foreach ($this->oPosts as $oPost): ?>
       <div class="row">
-        <hr>
-  			<div class="col s12 m12 l12">
+        <hr class="from-right">
+  			<div class="col s12 m12 l12 from-right">
   				<h4><?= $oPost->title ?></h4>
-  				<div class="row">
-  					<div class="col s12 m6 l8">
+  				<div class="row chapterlist">
+  					<div class="col s12 m6 l8 white-text">
               <!-- On affiche les 1200 premiers caractères et on affiche pas les images -->
   						<?= preg_replace("/<img[^>]+\>/i", "", nl2br(mb_strimwidth($oPost->body, 0, 800, '...'))); ?>
               <br><br>
@@ -18,7 +18,7 @@
   					<div class="col s12 m6 l4">
   						<img src="<?=ROOT_URL?>static/img/posts/<?= $oPost->image ?>" class="materialboxed responsive-img" alt="<?= $oPost->title ?>"/>
   						<br/><br/>
-  				  	<a class="btn deep-purple darken-3 waves-effect waves-light" href="<?=ROOT_URL?>blog_post_<?=$oPost->id?>.html">Lire le chapitre</a>
+  				  	<a class="btn orange lighten-3 black-text waves-effect waves-light" href="<?=ROOT_URL?>blog_post_<?=$oPost->id?>.html">Lire le chapitre</a>
   					</div>
   				</div>
   			</div>

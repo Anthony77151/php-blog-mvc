@@ -6,8 +6,8 @@
     <h1>Il n'y a aucun article.</h1>
     <p><button type="button" onclick="window.location='<?=ROOT_URL?>admin_add.html'" class="btn waves-effect waves-light">Ajoutez votre premier article!</button></p>
   <?php else: ?>
-  <h1>Edition</h1>
-  <a href="<?=ROOT_URL?>admin_add.html"><button class="btn deep-purple darken-3 waves-effect waves-light">Ajouter un article</button></a>
+  <h1 class="white-text">Édition</h1>
+  <a href="<?=ROOT_URL?>admin_add.html"><button class="btn orange lighten-3 black-text waves-effect waves-light">Ajouter un article</button></a>
   <br>
   <br>
   <hr>

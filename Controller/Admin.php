@@ -121,10 +121,10 @@ class Admin extends Blog
       ];
 
       $colors = [
-      	'Posts'				           => 'deep-purple lighten-4',
-      	'Comments' 		  	       => 'deep-purple lighten-2',
-      	'Users' 			           => 'deep-purple',
-        'Votes'                  => 'deep-purple darken-2'
+      	'Posts'				           => 'yellow lighten-3',
+      	'Comments' 		  	       => 'amber lighten-2',
+      	'Users' 			           => 'orange lighten-3',
+        'Votes'                  => 'orange lighten-1'
       ];
 
       $this->oUtil->aColors = array();

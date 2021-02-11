@@ -7,7 +7,7 @@
         <!-- Article -->
 
         <?php if (empty($this->oPost)): ?>
-            <h1>cet article n'existe pas !</h1>
+            <h1 class="white-text">cet article n'existe pas !</h1>
         <?php else: ?>
 
             <article>
@@ -24,17 +24,17 @@
 
             <h4 id="comment_ink">Commentaires :</h4>
             <?php if (empty($this->oComments)): ?>
-                <p class="bold">Aucun commentaire n'a été publié... Soyez le premier!</p>
+                <p class="bold white-text">Aucun commentaire n'a été publié... Soyez le premier!</p>
             <?php else: ?>
 
                 <?php foreach ($this->oComments as $oComment): ?>
 
                     <blockquote id="blockquote">
-                        <strong><?= $oComment->pseudo ?> <em>(Le <?= date('d/m/Y', strtotime($oComment->date)) ?>)</em></strong>
+                        <strong class="white-text"><?= $oComment->pseudo ?> <em>(Le <?= date('d/m/Y', strtotime($oComment->date)) ?>)</em></strong>
                         <p><?= nl2br($oComment->comment); ?></p>
                     </blockquote>
                     <?php if (!empty($_SESSION['is_admin'])): ?>
-                        <a href="<?=ROOT_URL?>?p=admin&amp;a=deleteComment&amp;id=<?=$oComment->id?>&amp;postid=<?=$this->oPost->id?>"><button class="btn deep-purple accent-3 waves-effect waves-light">Supprimer</button></a>
+                        <a href="<?=ROOT_URL?>?p=admin&amp;a=deleteComment&amp;id=<?=$oComment->id?>&amp;postid=<?=$this->oPost->id?>"><button class="btn yellow lighten-3 black-text waves-effect waves-light">Supprimer</button></a>
                     <?php endif ?>
 
                     <?php if(!empty($_SESSION['is_user'])): ?>
@@ -49,7 +49,7 @@
                         <pre>
       </pre>
                         <form class="vote-form" action="blog_signal_<?=$this->oPost->id?>_<?=$oComment->id?>_1.html" method="POST">
-                            <button class="btn red waves-effect waves-light signal-btn <?= $color ?>" type="submit">Signaler</button>
+                            <button class="btn orange lighten-3 black-text waves-effect waves-light signal-btn <?= $color ?>" type="submit">Signaler</button>
                         </form>
                     <?php endif ?>
 
@@ -69,11 +69,11 @@
                 <form method="post">
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea name="comment" id="comment" class="materialize-textarea" maxlength="1200"></textarea>
-                            <label for="comment">Commentaire</label>
+                            <textarea name="comment" id="comment" class="materialize-textarea white-text" maxlength="1200"></textarea>
+                            <label class="white-text" for="comment">Commentaire</label>
                         </div>
                         <div class="col s12">
-                            <button type="submit" name="submit_comment" class="btn deep-purple lighten-1 waves-effect waves-light">
+                            <button type="submit" name="submit_comment" class="btn amber lighten-2 black-text waves-effect waves-light">
                                 Commenter
                             </button>
                         </div>
